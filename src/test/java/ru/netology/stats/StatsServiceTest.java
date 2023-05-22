@@ -53,7 +53,7 @@ public class StatsServiceTest {
     public void  belowAverage() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expectedBelow = 7;
+        int expectedBelow = 5;
         int actualBelow = service.belowAverageSales(sales);
         Assertions.assertEquals(expectedBelow, actualBelow);
     }
@@ -61,7 +61,7 @@ public class StatsServiceTest {
     public void aboveAverage() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expectedAbove = 7;
+        int expectedAbove = 5;
         int actualAbove = service.aboveAverageSales(sales);
         Assertions.assertEquals(expectedAbove, actualAbove);
     }

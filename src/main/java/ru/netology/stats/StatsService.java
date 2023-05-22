@@ -42,7 +42,7 @@ public class StatsService {
             int average = averageMonthlySales(sales);
             int below = 0;
             for (int i : sales) {
-                if (i <= average) {
+                if (i < average) {
                     below = below + 1;
                 }
             }
@@ -54,7 +54,7 @@ public class StatsService {
             int average = averageMonthlySales(sales);
             int above = 0;
             for (int i : sales) {
-                if (i >= average) {
+                if (i > average) {
                     above = above + 1;
                 }
             }
